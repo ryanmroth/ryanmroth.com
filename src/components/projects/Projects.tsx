@@ -90,7 +90,7 @@ export default function Projects() {
             <ProjectCard key={project.name} project={project} />
           ))
         ) : (
-          <CardContent className="flex flex-col gap-4 duration-150 sm:flex-row">
+          <CardContent className="flex flex-col gap-4 duration-150 hover:bg-gray-100 sm:flex-row">
             <div className="w-full">
               <h3 className="font-medium">Coming soon</h3>
             </div>

@@ -51,7 +51,10 @@ const BlogPreview = ({ post }: BlogPreviewProps) => {
   return (
     <div>
       {cover && <BlogCover src={cover} alt={title} />}
-      <CardContent className="flex flex-col duration-150" hasCover={!!cover}>
+      <CardContent
+        className="flex flex-col duration-150 hover:bg-gray-100"
+        hasCover={!!cover}
+      >
         <div className="w-full">
           <Date dateString={publishDate} />
           <h3 className="group mt-1.5 font-medium">
@@ -91,7 +94,7 @@ export default async function Blogs() {
           {blogs.length > 0 ? (
             blogs.map((post) => <BlogPreview key={post.slug} post={post} />)
           ) : (
-            <CardContent>
+            <CardContent className="flex flex-col duration-150 hover:bg-gray-100">
               <p className="text-gray-600">No articles found.</p>
             </CardContent>
           )}
@@ -104,7 +107,7 @@ export default async function Blogs() {
       <Card>
         <CardHeading heading="Recent Articles" />
         <div className="mt-4 space-y-1.5">
-          <CardContent>
+          <CardContent className="flex flex-col duration-150 hover:bg-gray-100">
             <p className="text-gray-600">Failed to load articles.</p>
           </CardContent>
         </div>
