@@ -1,0 +1,12 @@
+export { default as BadgeIcon } from './BadgeIcon';
+export { default as BriefcaseIcon } from './BriefcaseIcon';
+export { default as CalendarIcon } from './CalendarIcon';
+export { default as CheckIcon } from './CheckIcon';
+export { default as DownloadIcon } from './DownloadIcon';
+export { default as ExpiredIcon } from './ExpiredIcon';
+export { default as FolderIcon } from './FolderIcon';
+export { default as GraduationCapIcon } from './GraduationCapIcon';
+export { default as LinkIcon } from './LinkIcon';
+export { default as MailIcon } from './MailIcon';
+export { default as PinIcon } from './PinIcon';
+export { default as UserIcon } from './UserIcon';

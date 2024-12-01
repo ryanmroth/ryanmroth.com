@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Base styles */
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-feature-settings:
+      'ss03' on,
+      'cv11' on,
+      'cv01' on,
+      'ss01' on;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-blue-500/10 text-blue-900;
+  }
+}
+
+@layer components {
+  /* Code blocks */
+  code {
+    @apply rounded-lg bg-gray-100 px-1.5 py-0.5 text-sm font-medium text-gray-900;
+  }
+
+  pre code {
+    @apply block bg-transparent p-0 text-gray-200;
+  }
+
+  /* Email protection */
+  span#email b {
+    display: none;
+  }
+}
+
+@layer utilities {
+  /* Scrollbar styles */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
