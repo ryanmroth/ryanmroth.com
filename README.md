@@ -1,6 +1,6 @@
 # ryanmroth.com
 
-Personal website of Ryan M. Roth, Cybersecurity Professional. See my resume and blog posts.
+Personal website of Ryan M. Roth. See my resume and blog posts.
 
 ## Acknowledgements
 
